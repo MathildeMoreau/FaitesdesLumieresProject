@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+body {
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+  font-family: "Quicksand", sans-serif !important;
+}
+
+/* NAVBAR */
+#logo {
+  margin-right: 200px !important;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+#logo > span {
+  margin-left: 10px;
+}
+
+.nav-item {
+  padding-right: 150px;
+  color: black;
+  font-size: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white !important;
+  font-size: 30px;
+}
+
+/* Bulle violette 1 */
+.purpleBubble {
+  position: absolute;
+  width: 1145px;
+  height: 1145px;
+  left: 640px;
+  top: -695px;
+  background: #9fa9ff;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+/* TEXTES ACCUEIL ET IMAGE  */
+.accueil {
+  width: 760px;
+  margin-top: 150px;
+}
+h1 {
+  color: #9fa9ff;
+  font-size: 100px !important;
+  font-weight: bold;
+}
+h2 {
+  font-size: 50px !important;
+}
+
+.accueil > p {
+  margin-top: 70px;
+  font-size: 20px !important;
+}
+
+.accueil > button {
+  background: #9fa9ff;
+  border-radius: 40px;
+  border: none;
+  width: 160px;
+  height: 55px;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.backImage {
+  position: absolute;
+  left: 850px;
+  top: 300px;
+}
+
+.backImage > img {
+  border-radius: 50%;
+  width: 550px;
+  height: 550px;
+}
