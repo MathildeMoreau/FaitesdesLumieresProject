@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&family=Rajdhani&display=swap");
 
 body {
   margin-left: 100px !important;
   margin-right: 100px !important;
   font-family: "Quicksand", sans-serif !important;
+  background: white;
 }
 
 /* NAVBAR */
@@ -16,6 +17,7 @@ body {
 
 #logo > span {
   margin-left: 10px;
+  font-weight: 600;
 }
 
 .nav-item {
@@ -30,6 +32,9 @@ body {
   font-size: 30px;
 }
 
+.nav-link:hover {
+  transform: scale(1.1);
+}
 /* Bulle violette 1 */
 .purpleBubble {
   position: absolute;
@@ -38,7 +43,7 @@ body {
   left: 640px;
   top: -695px;
   background: #9fa9ff;
-  z-index: -1;
+  z-index: -5;
   border-radius: 50%;
 }
 
@@ -81,4 +86,132 @@ h2 {
   border-radius: 50%;
   width: 550px;
   height: 550px;
+}
+
+/* Association */
+
+.backBubble {
+  margin-top: 100px;
+  position: absolute;
+  background: #9fa9ff;
+  z-index: -1;
+  width: 767px;
+  height: 568px;
+  clip-path: ellipse(44% 65% at 36% 35%);
+}
+
+.association {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 2.2);
+}
+
+.left-side > h2,
+.formulaire > h3 {
+  color: white;
+  text-align: center;
+}
+
+.formulaire {
+  margin-top: 80px;
+}
+.left-side > p {
+  font-weight: 600;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.names > input {
+  width: 300px;
+}
+input[type="email"] {
+  width: 620px;
+}
+form > input,
+.names > input,
+.area > textarea,
+.area > button {
+  border-radius: 3px;
+  border: rgba(128, 128, 128, 0.425) 2px solid;
+  margin: 10px;
+  padding: 3px;
+}
+
+.area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area > button {
+  width: 200px;
+  height: 50px;
+  color: black;
+  background: #9fa9ff;
+  position: relative;
+  left: 50px;
+  border: transparent;
+}
+
+textarea {
+  width: 450px;
+}
+.right-side {
+  width: calc(100% / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side > img,
+.recouvrement-container > img {
+  width: 550px;
+  margin-bottom: 10px;
+}
+
+.recouvrement-container {
+  position: relative;
+}
+
+image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.recouvrement {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: #9fa9ff;
+}
+
+.recouvrement-container:hover .recouvrement {
+  opacity: 0.8;
+}
+
+.recouvrement-texte {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+}
+.right-side > h3 {
+  color: #9fa9ff;
 }
