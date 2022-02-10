@@ -5,14 +5,15 @@ body {
   margin-right: 100px !important;
   font-family: "Quicksand", sans-serif !important;
   background: white;
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
 #logo {
-  margin-right: 200px !important;
+  margin-right: 400px !important;
   text-decoration: none;
   color: black;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #logo > span {
@@ -21,15 +22,13 @@ body {
 }
 
 .nav-item {
-  padding-right: 150px;
-  color: black;
-  font-size: 30px;
+  padding-right: 50px;
 }
 
 .nav-link {
   text-decoration: none;
   color: white !important;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .nav-link:hover {
@@ -38,8 +37,8 @@ body {
 /* Bulle violette 1 */
 .purpleBubble {
   position: absolute;
-  width: 1145px;
-  height: 1145px;
+  width: 945px;
+  height: 945px;
   left: 640px;
   top: -695px;
   background: #9fa9ff;
@@ -50,11 +49,11 @@ body {
 /* TEXTES ACCUEIL ET IMAGE  */
 .accueil {
   width: 760px;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 h1 {
   color: #9fa9ff;
-  font-size: 100px !important;
+  font-size: 80px !important;
   font-weight: bold;
 }
 h2 {
@@ -79,13 +78,13 @@ h2 {
 .backImage {
   position: absolute;
   left: 850px;
-  top: 300px;
+  top: 200px;
 }
 
 .backImage > img {
   border-radius: 50%;
-  width: 550px;
-  height: 550px;
+  width: 450px;
+  height: 450px;
 }
 
 /* Association */
@@ -97,7 +96,7 @@ h2 {
   z-index: -1;
   width: 767px;
   height: 568px;
-  clip-path: ellipse(44% 65% at 36% 35%);
+  clip-path: ellipse(35% 35% at 35% 35%);
 }
 
 .association {
@@ -111,6 +110,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   width: calc(100% / 2.2);
+  margin-top: 70px;
 }
 
 .left-side > h2,
@@ -120,7 +120,10 @@ h2 {
 }
 
 .formulaire {
-  margin-top: 80px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .left-side > p {
   font-weight: 600;
@@ -129,18 +132,18 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .names > input {
-  width: 300px;
+  width: 200px;
 }
 input[type="email"] {
-  width: 620px;
+  width: 425px;
 }
 form > input,
 .names > input,
-.area > textarea,
-.area > button {
+.area > textarea {
   border-radius: 3px;
   border: rgba(128, 128, 128, 0.425) 2px solid;
   margin: 10px;
@@ -152,18 +155,16 @@ form > input,
   justify-content: center;
   align-items: center;
 }
-.area > button {
+#send {
   width: 200px;
-  height: 50px;
+  height: 40px;
   color: black;
   background: #9fa9ff;
-  position: relative;
-  left: 50px;
   border: transparent;
 }
 
 textarea {
-  width: 450px;
+  width: 425px;
 }
 .right-side {
   width: calc(100% / 2);
@@ -175,7 +176,7 @@ textarea {
 
 .right-side > img,
 .recouvrement-container > img {
-  width: 550px;
+  width: 450px;
   margin-bottom: 10px;
 }
 
@@ -212,6 +213,43 @@ image {
   position: absolute;
   top: 50%;
 }
-.right-side > h3 {
+.right-side > h3,
+.event {
   color: #9fa9ff;
+}
+
+/* Evenements */
+
+.event {
+  margin-top: 50px;
+}
+
+.fete-lumiere {
+  background: #9fa9ff;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.carousel-item > img {
+  min-width: 100%;
+  max-height: 550px;
+}
+
+.fete-ete {
+  margin-top: 50px;
+}
+
+.ete-images {
+  display: flex;
+}
+.ete-images > img {
+  max-width: 49%;
+  margin-right: 30px;
+  border-radius: 10px;
 }
