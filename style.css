@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&family=Rajdhani&display=swap");
+
+body {
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+  font-family: "Quicksand", sans-serif !important;
+  background: white;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+#logo {
+  margin-right: 400px !important;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+#logo > span {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.nav-item {
+  padding-right: 50px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white !important;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+/* Bulle violette 1 */
+.purpleBubble {
+  position: absolute;
+  width: 945px;
+  height: 945px;
+  left: 640px;
+  top: -695px;
+  background: #9fa9ff;
+  z-index: -5;
+  border-radius: 50%;
+}
+
+/* TEXTES ACCUEIL ET IMAGE  */
+.accueil {
+  width: 760px;
+  margin-top: 50px;
+}
+h1 {
+  color: #9fa9ff;
+  font-size: 5rem !important;
+  font-weight: bold;
+}
+h2 {
+  font-size: 50px !important;
+}
+
+.accueil > p {
+  margin-top: 70px;
+  font-size: 20px !important;
+}
+
+.accueil > button {
+  background: #9fa9ff;
+  border-radius: 40px;
+  border: none;
+  width: 160px;
+  height: 55px;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.backImage {
+  position: absolute;
+  left: 850px;
+  top: 200px;
+}
+
+.backImage > img {
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+}
+
+/* Association */
+
+.backBubble {
+  margin-top: 100px;
+  position: absolute;
+  background: #9fa9ff;
+  z-index: -1;
+  width: 767px;
+  height: 568px;
+  clip-path: ellipse(35% 35% at 35% 35%);
+}
+
+.association {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 2.2);
+  margin-top: 70px;
+}
+
+.left-side > h2,
+.formulaire > h3 {
+  color: white;
+  text-align: center;
+}
+
+.formulaire {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left-side > p {
+  font-weight: 600;
+  text-align: center;
+}
+<<<<<<< HEAD
+=======
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+>>>>>>> fdb581b01491e71966b09025787cf698231c63b8
+
+.names > input {
+  width: 200px;
+}
+input[type="email"] {
+  width: 425px;
+}
+form > input,
+.names > input,
+.area > textarea {
+  border-radius: 3px;
+  border: rgba(128, 128, 128, 0.425) 2px solid;
+  margin: 10px;
+  padding: 3px;
+}
+
+.area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#send {
+  width: 200px;
+  height: 40px;
+  color: black;
+  background: #9fa9ff;
+  border: transparent;
+}
+
+textarea {
+  width: 425px;
+}
+.right-side {
+  width: calc(100% / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side > img,
+.recouvrement-container > img {
+  width: 450px;
+  margin-bottom: 10px;
+}
+
+.recouvrement-container {
+  position: relative;
+}
+
+image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.recouvrement {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: #9fa9ff;
+}
+
+.recouvrement-container:hover .recouvrement {
+  opacity: 0.8;
+}
+
+.recouvrement-texte {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+}
+.right-side > h3,
+.event {
+  color: #9fa9ff;
+}
+
+/* Evenements */
+
+.event {
+  margin-top: 50px;
+}
+
+.fete-lumiere {
+  background: #9fa9ff;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.carousel-item > img {
+  min-width: 100%;
+  max-height: 550px;
+}
+
+.fete-ete {
+  margin-top: 50px;
+}
+
+.ete-images {
+  display: flex;
+}
+.ete-images > img {
+  max-width: 49%;
+  margin-right: 30px;
+  border-radius: 10px;
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .nav-link,
+  #logo > span,
+  #clipboard,
+  .accueil > p {
+    display: none;
+  }
+
+  #logo > img {
+    width: 500px;
+  }
+
+  .purpleBubble {
+    left: 700px;
+    top: -400px;
+  }
+
+  .backImage {
+    top: 2300px;
+    left: 500px;
+  }
+
+  .backImage > img {
+    width: 700px;
+    height: 700px;
+  }
+
+  .clipboard {
+    position: absolute;
+    left: 600px;
+  }
+
+  .accueil {
+    margin-top: 200px;
+    margin-left: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accueil > h1 {
+    font-size: 250px !important;
+  }
+
+  .accueil > h2 {
+    font-size: 150px !important;
+    width: 1000px;
+  }
+
+  .accueil > button {
+    width: 600px;
+    height: 150px;
+    font-size: 70px;
+  }
+
+  .association,
+  .backBubble {
+    margin-top: 1200px;
+  }
+}
