@@ -276,6 +276,16 @@ footer > p {
   font-size: 1.5rem;
 }
 
+footer > p > a {
+  text-decoration: underline;
+  color: white;
+}
+
+footer > p > a:visited {
+  text-decoration: none;
+  color: white;
+}
+
 @media all and (min-width: 480px) and (max-width: 768px) {
   .backgroundImage > img {
     width: 600px;
