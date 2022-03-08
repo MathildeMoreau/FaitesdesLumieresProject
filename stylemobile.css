@@ -5,12 +5,11 @@ body {
   padding: 0;
   font-family: "Quicksand", sans-serif !important;
   overflow-x: hidden;
-  margin-left: 50px;
 }
 
 .nav-link {
   text-decoration: none;
-  font-size: 80px;
+  font-size: 50px;
 }
 
 .nav-link:hover {
@@ -18,25 +17,16 @@ body {
 }
 
 .purpleBubble {
-  background: #9fa9ff;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  position: absolute;
-  left: 100%;
-  bottom: 50%;
-  z-index: -4;
+  display: none;
 }
 
 .accueil {
-  margin-top: 100px;
+  margin-top: 3rem;
   text-align: center;
-  position: relative;
-  left: 50%;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #9fa9ff;
   font-weight: bold;
 }
@@ -47,12 +37,12 @@ h2 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .backgroundImage > img {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
@@ -63,29 +53,26 @@ button {
   width: 200px;
   height: 50px;
   font-size: 1.5rem;
-  margin-top: 30px;
+  margin-top: 1rem;
 }
 
 /* ASSOCIATION */
 .association {
-  margin-top: 150px;
+  margin-top: 10rem;
 }
 
 .left-side {
-  width: 900px;
+  width: 100%;
   display: flex;
-  margin-bottom: 100px;
+  flex-direction: column;
 }
 
 .titres-asso {
-  margin-top: 50px;
   text-align: center;
-  margin-left: 50px;
 }
 
-.titres-asso > h2 {
-  margin-bottom: 50px;
-  color: white;
+.titres-asso > p {
+  text-align: justify;
 }
 
 .formulaire {
@@ -93,11 +80,11 @@ button {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.8rem;
 }
 
 .formulaire > h3 {
-  font-size: 40px;
+  font-size: 3rem;
   color: #9fa9ff;
 }
 
@@ -116,24 +103,22 @@ form > input,
 }
 
 #send {
-  width: 200px;
-  height: 100px;
+  width: 70%;
+  height: 70%;
   border: transparent;
   color: white;
 }
 
 .backBubble {
-  background: #9fa9ff;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  z-index: -2;
-  position: absolute;
-  top: 1250px;
+  display: none;
 }
 
+.members {
+  margin-top: 3rem;
+}
 .right-side {
   display: flex;
+  flex-direction: column;
 }
 
 .members > h3 {
@@ -146,9 +131,8 @@ form > input,
 }
 
 .recouvrement-container > img {
-  width: 450px;
-  height: 350px;
-  margin-left: 50px;
+  width: 100%;
+  height: 100%;
 }
 
 .recouvrement {
@@ -179,13 +163,9 @@ form > input,
 
 .event {
   color: #9fa9ff;
-  margin-top: 100px;
+  margin-top: 5rem;
 }
-.fete-lumiere {
-  width: 1000px;
-  margin-right: 50px;
-  margin-top: 30px;
-}
+
 .carousel {
   width: 100%;
 }
@@ -196,38 +176,39 @@ form > input,
 
 .carousel-control-prev,
 .carousel-control-next {
-  top: 300px;
+  top: 50%;
 }
 
 .events-ete,
-.guinguette {
-  margin-top: 30px;
+.guinguette,
+.fete-lumiere {
+  margin-top: 1rem;
 }
 .photos-ete,
 .photos-guinguette {
   display: flex;
+  flex-direction: column;
 }
 
-.photos-ete > img {
-  max-width: 330px;
-}
-
+.photos-ete > img,
 .photos-guinguette > img {
-  max-width: 500px;
+  width: 100%;
 }
 
 /* CONTACT */
 
 .contact {
-  width: 1000px;
-  margin-top: 50px;
+  margin-top: 4rem;
 }
 
-.coordonnes,
+.coordonnes {
+  display: flex;
+  flex-direction: column;
+}
 .telephone,
 .mail {
   display: flex;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .telephone > img,
@@ -240,32 +221,25 @@ form > input,
   margin-top: 15px;
   margin-left: 10px;
 }
-.reseaux {
-  margin-top: 50px;
-}
+
 .reseaux-img {
-  width: 70px;
+  width: 6.5rem;
   margin-right: 20px;
 }
 iframe {
-  margin-left: 50px;
-  width: 600px;
-  height: 350px;
+  width: 100%;
 }
 
 #facebook-logo {
   border-radius: 50%;
-  width: 55px;
+  width: 5rem;
 }
 
 /* FOOTER */
 
 footer {
-  width: 1050px;
-  height: 100px;
   background: #9fa9ff;
-  margin-top: 30px;
-  margin-left: -50px;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,6 +248,7 @@ footer {
 footer > p {
   color: white;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 footer > p > a {
@@ -288,85 +263,50 @@ footer > p > a:visited {
 
 @media all and (min-width: 480px) and (max-width: 768px) {
   .backgroundImage > img {
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
   }
 
-  .backBubble {
-    top: 1400px;
+  .association {
+    margin-top: 3rem;
   }
 
-  .formulaire {
-    margin-left: 450px;
+  .titres-asso > p {
+    text-align: center;
   }
 
-  .titres-asso {
-    margin-left: 80px;
-  }
-
-  .fete-lumiere {
-    width: 1200px;
-  }
-
-  .photos-ete > img {
-    max-width: 400px;
-  }
-
-  .photos-guinguette > img {
-    max-width: 600px;
-  }
-
-  footer {
-    width: 1400px;
+  #send {
+    width: 50%;
   }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
-  .navbar-nav {
-    margin-left: 580px;
-  }
-
   .nav-link {
-    font-size: 40px;
-    margin-right: 20px;
+    font-size: 1.5rem;
   }
   .purpleBubble {
-    width: 1000px;
-    height: 1000px;
-    left: 70%;
-    bottom: 40%;
+    display: block;
+    width: 25rem;
+    height: 25rem;
+    position: absolute;
+    left: 68%;
+    bottom: 80%;
+    background: #9fa9ff;
+    border-radius: 50%;
+    z-index: -4;
   }
-
-  .accueil {
-    left: 30%;
+  .backgroundImage > img {
+    width: 80%;
+    height: 80%;
   }
 
   span {
     font-size: 30px;
   }
 
-  .titres-asso {
-    margin-top: 150px;
-  }
-  .association,
-  .backBubble {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-
-  .backBubble {
-    width: 667px;
-    height: 567px;
-  }
-
-  .left-side {
-    flex-direction: column;
-    margin-top: 30px;
-  }
-
   .association {
     display: flex;
+    flex-direction: column;
   }
 
   input,
@@ -374,106 +314,78 @@ footer > p > a:visited {
     width: 550px;
   }
 
-  .formulaire > h3 {
-    color: white;
-    margin-top: 100px;
-  }
-
-  form {
-    margin-top: 20px;
+  .formulaire {
+    margin-top: 2rem;
   }
 
   .members {
-    margin-top: 100px;
+    margin-top: 2rem;
   }
   .right-side {
-    flex-direction: column;
-    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
   }
 
-  .recouvrement-container {
-    margin-top: 30px;
-  }
-
-  .fete-lumiere {
-    width: 1500px;
+  .photos-ete,
+  .photos-guinguette {
+    display: flex;
+    flex-direction: row;
   }
   .photos-ete > img {
-    max-width: 500px;
+    width: 33%;
   }
 
   .photos-guinguette > img {
-    max-width: 750px;
+    width: 45%;
   }
 
-  .coordonnes {
-    width: 1500px;
-  }
   iframe {
-    margin-left: 200px;
-    width: 700px;
-    height: 350px;
+    width: 80%;
   }
-
-  .reseaux {
-    width: 700px;
-  }
-
-  .reseaux > a {
-    margin-right: 30px;
-  }
-
-  .reseaux > a > img {
-    width: 100px;
-  }
-
-  #facebook-logo {
-    width: 80px;
-  }
-  footer {
-    width: 1720px;
+  .telephone-mail {
+    text-align: center;
   }
 }
 
 @media all and (min-width: 1024px) {
-  body {
-    margin-left: 100px;
-    margin-right: 100px;
+  .d-none {
+    font-size: 2.5rem;
   }
   .purpleBubble {
-    width: 800px;
-    height: 800px;
-    left: 48%;
-    bottom: 50%;
+    display: block;
+    width: 25rem;
+    height: 25rem;
+    position: absolute;
+    left: 75%;
+    bottom: 80%;
+    background: #9fa9ff;
+    border-radius: 50%;
+    z-index: -4;
   }
 
   .navbar-nav {
-    margin-left: 450px;
+    margin-left: 8rem;
   }
   .nav-link {
-    font-size: 35px;
+    font-size: 3rem;
     margin-right: 20px;
   }
 
   .accueil {
-    left: 0px;
-    top: 80px;
-    margin: 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
   }
 
   .backgroundImage > img {
-    width: 400px;
-    height: 400px;
+    width: 70%;
+    height: 80%;
   }
 
   h1 {
     font-size: 5rem;
     color: #9fa9ff;
     font-weight: normal;
-    margin-top: 100px;
   }
 
   h2 {
@@ -481,109 +393,90 @@ footer > p > a:visited {
   }
 
   p {
-    margin-top: 50px;
+    margin-top: 1rem;
     font-size: 1rem;
   }
 
   button {
-    width: 200px;
-    height: 60px;
+    width: 40%;
     font-size: 1.2rem;
-    margin-top: 30px;
-  }
-
-  span {
-    font-size: 20px;
-  }
-
-  .backBubble {
-    width: 567px;
-    height: 567px;
-    z-index: -3;
-    top: 700px;
+    margin-top: 1rem;
+    color: white;
   }
 
   .left-side {
     flex-direction: column;
-    margin-left: -120px;
+  }
+
+  .titres-asso > p {
+    text-align: center;
   }
 
   .association {
     display: flex;
+    margin-top: 5rem;
   }
 
   input,
   textarea {
-    width: 550px;
-  }
-
-  .formulaire > h3 {
-    color: white;
-    margin-top: 100px;
+    width: 30rem;
   }
 
   form {
-    margin-top: 20px;
-  }
-
-  .members {
-    margin-top: 80px;
-  }
-  .right-side {
-    flex-direction: column;
-    margin-left: 150px;
-  }
-
-  .recouvrement-container {
-    margin-top: 30px;
+    margin-top: 1rem;
   }
 
   #send {
-    width: 300px;
+    width: 60%;
+    height: 3rem;
   }
 
-  #carousel {
-    margin-left: 100px;
+  .members {
+    margin: 0;
+  }
+  .right-side {
+    flex-direction: column;
+    margin-left: 15rem;
+  }
+
+  .recouvrement-container > img {
+    width: 65%;
+  }
+
+  .recouvrement {
+    width: 65%;
   }
 
   .fete-lumiere {
     margin-top: 20px;
   }
 
+  .photos-ete,
+  .photos-guinguette {
+    display: flex;
+    flex-direction: row;
+  }
   .photos-ete > img {
-    max-width: 400px;
+    width: 33%;
   }
 
   .photos-guinguette > img {
-    max-width: 600px;
+    width: 45%;
   }
 
   .coordonnes {
-    width: 1500px;
+    display: flex;
+    flex-direction: row;
   }
   iframe {
-    margin-left: 50px;
-    width: 500px;
-    height: 350px;
+    width: 80%;
   }
 
   .reseaux {
-    width: 700px;
+    width: 30rem;
   }
 
   .reseaux > a {
     margin-right: 30px;
-  }
-
-  .reseaux > a > img {
-    width: 100px;
-  }
-
-  #facebook-logo {
-    width: 80px;
-  }
-  footer {
-    width: 1500px;
-    margin-left: -100px;
   }
 }
